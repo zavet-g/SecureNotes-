@@ -35,7 +35,7 @@
    python app.py
 
 
-##Структура проекта
+## Структура проекта
 
    ```csharp
    SecureNotes/
