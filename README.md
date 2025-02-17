@@ -16,8 +16,8 @@
 1. Клонируйте репозиторий:
 
    ```bash
-   git clone https://github.com/yourusername/NoteKeeper.git
-   cd NoteKeeper
+   git clone https://github.com/yourusername/SecureNotes.git
+   cd SecureNotes
 
 2. Установите зависимости:
 
