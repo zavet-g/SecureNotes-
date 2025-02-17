@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подтверждение кода</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="code-container">
+        <h2>Введите кодовое слово</h2>
+        <form action="/code" method="post">
+            <label for="code">Кодовое слово:</label>
+            <input type="text" id="code" name="code" required>
+
+            <button type="submit">Подтвердить</button>
+        </form>
+        <a href="/">Вернуться на главную</a>
+    </div>
+</body>
+</html>
