@@ -48,7 +48,6 @@ def login():
     username = request.form["username"]
     password = request.form["password"]
 
-    # Логируем попытку входа
     app.logger.info(f"Попытка входа с именем пользователя: {username}")
 
     user = User.query.filter_by(username=username).first()
@@ -57,7 +56,6 @@ def login():
         app.logger.info(f"Пользователь {username} успешно вошел.")
         return render_template('code.html')
 
-    # Логируем ошибку при неправильных данных
     app.logger.error(f"Ошибка входа для пользователя {username}. Неверный логин или пароль.")
     return "<h3 style='color:red;'>Ошибка входа!</h3> <a href='/'>Попробовать снова</a>"
 
